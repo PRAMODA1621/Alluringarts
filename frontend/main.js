@@ -1,4 +1,4 @@
-const API = 'http://localhost:4000/api'; // later change this to Render link
+const API = 'https://alluringarts-backend.onrender.com/api';
 
 document.getElementById('contactForm').addEventListener('submit', async e => {
   e.preventDefault();
