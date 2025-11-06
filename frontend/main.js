@@ -1,4 +1,5 @@
-const API = 'https://alluringarts-backend.onrender.com/api';
+// Connect to your Render backend for contact form
+const API = 'https://alluringarts.onrender.com/'; // replace with your actual backend URL
 
 document.getElementById('contactForm').addEventListener('submit', async e => {
   e.preventDefault();
