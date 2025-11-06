@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alluring Mandala Art</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -19,34 +19,41 @@
       </ul>
     </nav>
     <div class="hero" id="home">
-      <h1>Discover the Beauty of Mandala Art</h1>
-      <p>Intricate designs that reflect harmony, balance, and creativity.</p>
-      <a href="#gallery" class="btn">Explore Gallery</a>
+      <div class="overlay"></div>
+      <div class="hero-text">
+        <h1 class="fade-up">Where Art Meets Meditation</h1>
+        <p class="fade-up-delay">Explore the intricate world of Mandalas — symmetry, soul, and serenity intertwined.</p>
+        <a href="#gallery" class="btn fade-up-delay2">View Gallery</a>
+      </div>
     </div>
   </header>
 
-  <section id="about">
+  <section id="about" class="fade-section">
     <h2>About Me</h2>
     <p>
-      Hello! I’m <strong>Anu</strong>, a passionate artist who finds peace and inspiration 
-      in Mandala designs. Each piece I create is a blend of creativity and meditation, 
-      crafted with love to bring serenity into your space.
+      Hello! I’m <strong>Anu</strong>, a Mandala artist inspired by the harmony of shapes and the rhythm of lines. 
+      Every Mandala I create reflects mindfulness, balance, and the beauty of imperfection. My goal is to spread calm through art.
     </p>
   </section>
 
-  <section id="gallery">
+  <section id="gallery" class="fade-section">
     <h2>Mandala Gallery</h2>
     <div class="gallery">
-      <img src="images/mandala1.jpg" alt="Mandala 1">
-      <img src="images/mandala2.jpg" alt="Mandala 2">
-      <img src="images/mandala4.jpg" alt="Mandala 3">
-      
-      
+      <div class="gallery-item">
+        <img src="images/mandala1.jpg" alt="Mandala 1">
+      </div>
+      <div class="gallery-item">
+        <img src="images/mandala2.jpg" alt="Mandala 2">
+      </div>
+      <div class="gallery-item">
+        <img src="images/mandala4.jpg" alt="Mandala 3">
+      </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="fade-section">
     <h2>Contact Me</h2>
+    <p class="contact-subtext">Want a custom Mandala or just want to say hello? Drop me a message!</p>
     <form id="contactForm">
       <input id="cname" type="text" placeholder="Your Name" required />
       <input id="cemail" type="email" placeholder="Your Email" required />

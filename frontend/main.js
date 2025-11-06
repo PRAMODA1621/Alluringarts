@@ -1,5 +1,4 @@
-// Connect to your Render backend for contact form
-const API = 'https://alluringarts.onrender.com/'; // replace with your actual backend URL
+const API = 'https://alluringarts.onrender.com'; // your backend link
 
 document.getElementById('contactForm').addEventListener('submit', async e => {
   e.preventDefault();
@@ -16,3 +15,18 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
   const data = await res.json();
   alert(data.success ? "📩 Message sent successfully!" : "❌ Failed to send message");
 });
+
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector("nav");
+  if (window.scrollY > 80) nav.classList.add("scrolled");
+  else nav.classList.remove("scrolled");
+});
+
+const fadeElems = document.querySelectorAll('.fade-section');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.2 });
+
+fadeElems.forEach(el => observer.observe(el));
