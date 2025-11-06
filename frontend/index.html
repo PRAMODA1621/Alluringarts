@@ -2,65 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alluring Mandala Art</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Alluring Mandala Art</div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
 
-    <div class="hero" id="home">
-      <div class="overlay"></div>
-      <div class="floating-particles"></div>
-      <div class="hero-text">
-        <h1 class="fade-up">Where Mandala Meets Soul</h1>
-        <p class="fade-up-delay">Harmony in lines, peace in colors — experience the art of mindfulness.</p>
-        <a href="#gallery" class="btn fade-up-delay2">Explore My Art</a>
-      </div>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">🪷 Alluring Mandala</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Where Art Meets Meditation</h1>
+      <p>Beautifully handcrafted mandalas that bring warmth, balance, and harmony to your world.</p>
+      <a href="#gallery" class="btn">Explore Gallery</a>
     </div>
-  </header>
+  </section>
 
+  <!-- ABOUT -->
   <section id="about" class="fade-section">
     <h2>About Me</h2>
-    <p>
-      Hello! I’m <strong>Anu</strong>, a Mandala artist who finds balance in every pattern and calm in every circle.  
-      Each piece I create captures meditative symmetry, inspired by energy, focus, and vibrant imagination.
-    </p>
+    <p>Hi, I'm <strong>Anu</strong>. I craft mandala artworks inspired by symmetry, nature, and inner calm. Each piece is carefully designed to inspire balance and peace in every home.</p>
   </section>
 
+  <!-- GALLERY -->
   <section id="gallery" class="fade-section">
     <h2>Mandala Gallery</h2>
+    <p class="muted">Hover to explore intricate patterns and delicate detailing.</p>
     <div class="gallery">
-      <div class="gallery-item"><img src="images/mandala1.jpg" alt="Mandala 1"></div>
-      <div class="gallery-item"><img src="images/mandala2.jpg" alt="Mandala 2"></div>
-      <div class="gallery-item"><img src="images/mandala4.jpg" alt="Mandala 3"></div>
+      <img src="images/mandala1.jpg" alt="Mandala 1">
+      <img src="images/mandala2.jpg" alt="Mandala 2">
+      <img src="images/mandala4.jpg" alt="Mandala 3">
     </div>
   </section>
 
-  <section id="contact" class="fade-section">
-    <h2>Contact Me</h2>
-    <p class="contact-subtext">Let’s create something mesmerizing together!</p>
-    <p class="email-display">📧 alluringmandalas@gmail.com</p>
-    <form id="contactForm">
-      <input id="cname" type="text" placeholder="Your Name" required />
-      <input id="cemail" type="email" placeholder="Your Email" required />
-      <textarea id="cmessage" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section fade-section">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <p class="contact-sub">I’d love to hear from you — whether it’s about my artwork, a custom mandala, or just to say hello 🌸</p>
+
+      <div class="contact-card">
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">✨ Send Message ✨</button>
+        </form>
+
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:alluringmandalas@gmail.com">alluringmandalas@gmail.com</a></p>
+          <p class="thanks">💌 I’ll get back to you within 24 hours.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Alluring Mandala Art | Crafted with 🪷 by Anu</p>
+    <p>© 2025 Alluring Mandala Art • Crafted by Anu</p>
   </footer>
 
   <script src="main.js"></script>
